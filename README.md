@@ -40,12 +40,11 @@ log { source(s_pihole_log); destination(d_graylog); };
   * geolite2-city (``/usr/share/graylog/data/GeoLite2-City.mmdb``)
   
 * **Dashboard called ``DNS Intel``**:
-  * DNS Location Requested IP (from answers)
-  * DNS Activities (24h)
-  * Thread Names (24h)
-  * Blocked Domains (24h)
-  * Blackholed Requests (24h)
-  * Threat Indicated (24h)
+  * DNS Activities Over Time (24h)
+  * DNS Location Requested IP (from answers) (24h)
+  * Threat Indicated Count (24h)
+  * DNS Query Count (24)
+  * DNS Query Logs (24h)
+  * Threat Names (24h)
   * DNS Clients (24h)
-  * DNS Querys (24h)
-  * Owning Companies (24h)
+  
