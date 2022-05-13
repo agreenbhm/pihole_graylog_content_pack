@@ -21,7 +21,10 @@ log { source(s_pihole_log); destination(d_graylog); };
   * piHole Syslog (``Listen 0.0.0.0:1515/UDP``)
   
 * **Extractor**:
-  * app_name (Looking for ``pihole``)
+  * app_name (sets to ``pihole`` for matching messages)
+
+* **Stream**:
+  * PiHole Messages (adds messages with app_name = ``pihole`` to separate stream and removes from All Messages) 
 
 * **Pipeline**:  
 ``Creates Multiple fields to enable stronger queries and analytics``
